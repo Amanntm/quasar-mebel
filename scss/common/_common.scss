@@ -15,9 +15,17 @@
         text-transform: uppercase;
 }
 .phone{
-    background-image: url('./images/grayIcon/phone.png');
-    width: 24px;
-    height: 24px;
+    background: url('/images/grayIcon/phone.png') no-repeat ;
+    @extend %footer-icon;
+    top: 5px;
 }
-.mail{}
-.local{}
+.email{
+    background: url('/images/grayIcon/mail.png') no-repeat;
+    @extend %footer-icon;
+    top: 6px;
+}
+.local{
+    background: url('/images/grayIcon/geo.png') no-repeat;
+    @extend %footer-icon;
+    top: 2px;
+}

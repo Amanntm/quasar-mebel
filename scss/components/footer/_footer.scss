@@ -1,16 +1,43 @@
 .footer{
     background: $footer-bg;
     position: relative;
+    height: 380px;
+    padding: 60px 120px 40px 120px;
+    .recvizits{
+        padding-top: 40px;
+    }
+    &__list{
+        a{
+            color: $main-color-text;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+    .contacts{
+        ul{
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+        }
+        li{
+            padding: 10px 0;
+            font-size: 18px;
+        
+        }
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
     &__social-links {
-        
-        
-            transform: translate(0, -50%);
             display: flex;
             flex-direction: row;
-            padding-right: 20px;
-    
+            justify-content: space-between;
+            
             a {
-                padding: 10px 0;
+                padding: 0 20px;
             }
         }
         &__logo{
