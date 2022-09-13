@@ -7,3 +7,10 @@
     display: flex;
     flex-wrap: wrap;
 }
+.main-title{
+        font-size: 48px;
+        color: $main-color-text;
+        font-weight: 700;
+        line-height: 64px;
+        text-transform: uppercase;
+}
