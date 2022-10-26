@@ -1,9 +1,39 @@
 .production{
-    &___wrapper{
+   @extend %padding-top;
+    &__wrapper{
         display: flex;
+        padding-top: 40px;
+        gap: 40px;
+    
     }
     &__item{
-
+        position: relative;
+        padding-bottom: 40px;
+        &:last-child{
+            padding-bottom: 0px;
+        }
+        img{
+            border-radius: 10px;
+        }
+       
     }
+    &__info{
+        position: absolute;
+        left: 20px;
+        top: 30px;
+        .title{
+            font-size: 20px;
+            text-transform: uppercase;
+            color: $main-color-text;
 
+        }
+        .link{
+            font-size: 16px;
+            text-transform: uppercase;
+            text-decoration: underline;
+            color: $main-color-text;
+            margin-top: 10px;
+            position: absolute;
+        }
+    }
 }
